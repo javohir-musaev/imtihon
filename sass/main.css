@@ -1,0 +1,466 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.contaner {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background: #fff;
+  padding: 20px 0;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .logo .bold {
+  color: #000;
+}
+.navbar .logo .light {
+  color: gray;
+}
+.navbar .menu {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  padding: 0;
+}
+.navbar .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+.navbar .menu li a:hover {
+  color: #007BFF;
+}
+.navbar .button {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-radius: 5px;
+}
+.navbar .button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+}
+.hero .content {
+  max-width: 50%;
+}
+.hero .button {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.hero .hero-image {
+  max-width: 45%;
+  margin-bottom: 20px;
+}
+.hero .hero-image img {
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
+  margin: auto;
+  height: 15px;
+}
+
+.skills-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.skills-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  min-height: 350px;
+}
+.skills-card:hover {
+  transform: translateY(-8px);
+}
+.skills-card img {
+  max-width: 100%;
+  height: auto;
+}
+.skills-card h2 {
+  font-size: 1, 5rem;
+  margin: 10px;
+}
+.skills-card p {
+  font-size: 1rem;
+  color: #666;
+}
+.skills-card .btn {
+  background: #000;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+.skills-card .btn:hover {
+  background: #444;
+}
+
+.skills {
+  max-width: 1338px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  grid-template-rows: 532px 343px;
+}
+
+.skills__item {
+  border-radius: 10px;
+}
+
+.skills__item:nth-child(1) {
+  grid-row: 1/3;
+}
+
+.skills__item:nth-child(4) {
+  grid-column: 2/4;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #fff;
+}
+.about .content {
+  max-width: 50%;
+}
+.about .content h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.about .content p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+.about .content .stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+.about .content .stats .stat {
+  text-align: center;
+}
+.about .content .stats .stat h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+}
+.about .content .stats .stat p {
+  font-size: 1rem;
+  color: #7a7a7a;
+}
+.about .image {
+  max-width: 45%;
+}
+.about .image img {
+  width: 100%;
+}
+
+.pricing {
+  padding: 60px 20px;
+}
+.pricing h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.pricing .pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+.pricing .pricing-cards .pricing-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  width: 400px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.pricing .pricing-cards .pricing-card img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 25px;
+}
+.pricing .pricing-cards .pricing-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.pricing .pricing-cards .pricing-card p {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 25px;
+  line-height: 1.8;
+}
+.pricing .pricing-cards .pricing-card .price {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #222;
+}
+.pricing .pricing-cards .pricing-card .price small {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.contact-us {
+  background: white;
+  padding: 60px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background: #f8f9fc;
+}
+.contact-us .contact-us-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.contact-us .contact-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.contact-us .image-container {
+  flex: 1;
+}
+.contact-us .image-container img {
+  width: 300px;
+  height: auto;
+}
+.contact-us .contact-us-info {
+  flex: 1;
+  text-align: left;
+}
+.contact-us .contact-us-info h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.contact-us .contact-us-info p {
+  font-size: 1.4rem;
+  color: #444;
+  margin-bottom: 20px;
+  line-height: 1.8;
+}
+.contact-us .contact-us-info form {
+  display: flex;
+  gap: 10px;
+}
+.contact-us .contact-us-info form input {
+  flex: 1;
+  padding: 15px;
+  font-size: 1.2rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+.contact-us .contact-us-info form button {
+  background: black;
+  color: white;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact-us .contact-us-info form button:hover {
+  background: #333;
+}
+.contact-us hr {
+  margin: 50px 0;
+  border: 1px solid #ddd;
+}
+.contact-us .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-us .footer-bottom .brand {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.contact-us .footer-bottom nav {
+  display: flex;
+  gap: 15px;
+}
+.contact-us .footer-bottom nav a {
+  text-decoration: none;
+  color: #555;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+.contact-us .footer-bottom nav a:hover {
+  color: black;
+}
+
+@media (max-width: 992px) {
+  .skills {
+    grid-template-rows: 442px 241px;
+  }
+}
+@media (max-width: 767px) {
+  .skills {
+    grid-template-rows: 442px 210px;
+  }
+}
+@media (max-width: 575px) {
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 535px 535px;
+  }
+  .skills__item:nth-child(1) {
+    grid-row: auto;
+  }
+  .skills__item:nth-child(4) {
+    grid-column: auto;
+  }
+}
+@media (max-width: 500px) {
+  .skills {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+}
+@media (max-width: 770px) {
+  .contaner {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .navbar .navbar_container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .navbar-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  .hero .hero-content {
+    max-width: 100%;
+  }
+  .hero .hero-image {
+    max-width: 70%;
+  }
+  .skills {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+  .skills__item:nth-child(1),
+  .skills__item:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .About-Us {
+    flex-direction: column;
+    text-align: center;
+  }
+  .About-Us .About-content {
+    max-width: 100%;
+  }
+  .About-Us .About-image {
+    max-width: 80%;
+  }
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 400px) {
+  .navbar {
+    padding: 10px 0;
+  }
+  .menu {
+    gap: 10px;
+  }
+  .hero {
+    padding: 20px;
+  }
+  .hero .content {
+    text-align: center;
+  }
+  .hero .hero-image {
+    max-width: 90%;
+  }
+  .skills {
+    grid-template-columns: 1fr;
+  }
+  .about {
+    padding: 20px;
+  }
+  .about .content {
+    text-align: center;
+  }
+  .about .image {
+    max-width: 100%;
+  }
+  .pricing-card {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact-us {
+    padding: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
